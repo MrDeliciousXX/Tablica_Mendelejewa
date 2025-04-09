@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1a1a1a;
+  }
+  
+  #periodic-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  #periodic-table td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .metal-alk { background-color: #244d57; }
+  .metaloid { background-color: #523e1b; }
+  .aktynowiec { background-color: #613b28; }
+  .lantanowiec { background-color: #004a77; }
+  .metal-ziem-alk { background-color: #622e39; }
+  .niemetal-reakt { background-color: #2a4165; }
+  .nieznane { background-color: #46474c; }
+  .metal-przejsc { background-color: #433c65; }
+  .gaz-szlach { background-color: #613841; }
+  .metal-post { background-color: #2f4d47; }
+  
+  #element-animation {
+    margin-top: 2px;
+    width: 420px;
+  }
+
+  #title {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
