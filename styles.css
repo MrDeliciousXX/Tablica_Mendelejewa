@@ -10,17 +10,45 @@ body {
   }
   
   #periodic-table td {
+    position: relative;
     width: 50px;
-    height: 50px;
+    height: 25px;
     border: 1px solid black;
     text-align: center;
     cursor: pointer;
+    border-radius: 12px;
+  }
+
+  #periodic-table td.empty {
+    border: none;
+    background-color: transparent;
+    cursor: default;
+  }
+
+  .atomic-number {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .symbol {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 45px;
+    display: inline-block;
+  }
+
+  .selected {
+    color: #ffffff !important;  /* Kolor tekstu po zaznaczeniu */
   }
 
   .metal-alk { background-color: #244d57; }
   .metaloid { background-color: #523e1b; }
   .aktynowiec { background-color: #613b28; }
-  .lantanowiec { background-color: #004a77; }
+  .lantanowiec {  background-color: #004a77; }
   .metal-ziem-alk { background-color: #622e39; }
   .niemetal-reakt { background-color: #2a4165; }
   .nieznane { background-color: #46474c; }
@@ -37,3 +65,57 @@ body {
     color: #ffffff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   }
+
+  /* Styl kontenera z obrazkiem */
+#animation-container {
+  display: inline-block;
+  position: relative;
+}
+
+#element-animation {
+  width: 300px;  /* Rozmiar miniaturki */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#element-animation:hover {
+  opacity: 0.7;
+}
+
+/* Styl modala */
+.modal {
+  display: none; /* Początkowo ukryty */
+  position: fixed;
+  z-index: 1; /* Wierzch */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Ciemne tło */
+  padding-top: 60px;
+}
+
+/* Powiększenie zdjęcia w modalnym oknie */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 900px;
+}
+
+/* Przycisk zamknięcia */
+.close {
+  color: #aaa;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
