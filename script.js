@@ -36,3 +36,9 @@ img.onclick = function() {
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    modal.style.display = "none";
+  }
+});
