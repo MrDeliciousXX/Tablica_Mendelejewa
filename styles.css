@@ -119,3 +119,42 @@ body {
   text-decoration: none;
   cursor: pointer;
 }
+
+#info-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #444;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  font-size: 32px;
+}
+
+#info-popup {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  background-color: #4b4b4b;
+  padding: 15px;
+  border: 1px solid #aaa;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: none;
+  max-width: 300px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #c9c9c9
+}
+
+#info-popup button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 13px;
+  cursor: pointer;
+}

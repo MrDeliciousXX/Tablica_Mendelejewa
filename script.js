@@ -42,3 +42,11 @@ document.addEventListener('keydown', function(e) {
     modal.style.display = "none";
   }
 });
+
+document.getElementById('info-button').addEventListener('click', () => {
+  document.getElementById('info-popup').style.display = 'block';
+});
+
+document.getElementById('close-popup').addEventListener('click', () => {
+  document.getElementById('info-popup').style.display = 'none';
+});
